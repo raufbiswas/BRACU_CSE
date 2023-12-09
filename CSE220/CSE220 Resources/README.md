@@ -28,11 +28,15 @@ Binary Search Tree section 10 (5/12/23) - https://youtu.be/Uaq4jkfMCtU
 
 Binary Search Tree section 11 (5/12/23) - https://youtu.be/iU_S7nZWFTY 
 
+BST Removal of a Node with code - https://youtu.be/8hi1v3uQ-y0
+
 # Playlist
 
 Recursion - https://youtube.com/playlist?list=PLkqsZdV3LRJT8d6nlM9-dI5JJwqcWWUnD&si=OZO5fuQhK-hJTLc5
 
 Trees - https://youtube.com/playlist?list=PLkqsZdV3LRJTN_X766jVyMo4VepCzJZjH&si=vswkw8eqO-rn7zaJ
+
+Key Index Search and Sort https://www.youtube.com/playlist?list=PLkqsZdV3LRJTArYgntug2RMVYibB9l-sI
 
 # Online Lab Class
 
