@@ -25,7 +25,7 @@ def tree_construction(arr, i = 1):
 def inorder_predecessor(root, x):
     if x.left != None:
         return rightmost(x.left)
-    return predecesssor(root,x)
+    return predecessor(root,x)
 
 def rightmost(root):
     if root.right != None:
