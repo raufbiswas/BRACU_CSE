@@ -21,17 +21,18 @@ def tree_construction(arr, i = 1):
   return p
 
 #Bonus Task01
+def sumTree(root):
+    sum = sumOfNodes(root) - root.elem
+    if sum == root.elem:
+        return True
+    return False
+
 def sumOfNodes(root,sum=0):
     if root != None:
         sum+=root.elem
         sum = sumOfNodes(root.left,sum)
         sum = sumOfNodes(root.right,sum)
     return sum
-def sumTree(root):
-    sum = sumOfNodes(root) - root.elem
-    if sum == root.elem:
-        return True
-    return False
 
 root = tree_construction([None,26,10,3,4,6,None,3])
 print(sumTree(root))

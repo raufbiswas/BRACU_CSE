@@ -24,24 +24,21 @@ def tree_construction(arr, i = 1):
 #Task03
 def inorder_predecessor(root, x):
     if x.left != None:
-        x = x.left
-        return right(x)
-    else:
-        return predecessor(root,x)
-    
-def right(r):
-    if r.right == None:
-        return r
-    else:
-        return right(r.right)
-    
-def predecessor(root,x,proot = None):
+        return rightmost(x.left)
+    return predecesssor(root,x)
+
+def rightmost(root):
+    if root.right != None:
+        return rightmost(root.right)
+    return root
+
+def predecessor(root, x, parent = None):
     if root.elem == x.elem:
-        return proot 
+        return parent
     elif root.elem < x.elem:
-        return predecessor(root.right,x,root)
-    elif root.elem > x.elem:
-        return predecessor(root.left,x,proot)
+        return predecessor(root.right, x, root)
+    else:
+        return predecessor(root.elem, x, parent)
 
 #DRIVER CODE
 root = BTNode(20)

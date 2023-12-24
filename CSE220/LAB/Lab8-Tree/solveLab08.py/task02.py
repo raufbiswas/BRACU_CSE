@@ -21,16 +21,14 @@ def tree_construction(arr, i = 1):
   return p
 
 #Task02
-def smallest_level(root, level = 0, dic={}):
+def smallest_level(root,i=0,dic={}):
     if root == None:
-        return None
-    if level not in dic:
-        dic[level] = root.elem
-    elif level in dic and dic[level] > root.elem:
-        dic[level] = root.elem
-    smallest_level(root.left,level+1,dic)
-    smallest_level(root.right,level+1,dic)
-    
+        return
+    elif i not in dic or dic[i] > root.elem:
+        dic[i] = root.elem
+    smallest_level(root.left, i+1, dic)
+    smallest_level(root.right, i+1, dic)
+
     return dic
 
 
