@@ -4,13 +4,14 @@ class BTNode:
     self.right = None
     self.left = None
 
-#Postorder Traversal
-def postorder(root):
+#Inorder Traversal
+def inorder(root):
   if root == None:
     return
-  postorder(root.left)
-  postorder(root.right)
+
+  inorder(root.left)
   print(root.elem, end = ' ')
+  inorder(root.right)
 
 #Array to Binary Tree
 def tree_construction(arr, i = 1):
@@ -22,4 +23,4 @@ def tree_construction(arr, i = 1):
   return p
 
 root = tree_construction([None, 71, 50, 90, 20, None, None, 98, None, 40, None, None, None, None, 94, None])
-postorder(root)
+inorder(root)

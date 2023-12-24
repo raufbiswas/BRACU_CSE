@@ -4,14 +4,6 @@ class BTNode:
     self.right = None
     self.left = None
 
-#Postorder Traversal
-def postorder(root):
-  if root == None:
-    return
-  postorder(root.left)
-  postorder(root.right)
-  print(root.elem, end = ' ')
-
 #Array to Binary Tree
 def tree_construction(arr, i = 1):
   if i>=len(arr) or arr[i] == None:
@@ -21,5 +13,18 @@ def tree_construction(arr, i = 1):
   p.right = tree_construction(arr, 2*i+1)
   return p
 
+#search
+def search(root,key):
+    if root is not None:
+        if key == root.elem:
+            return True
+        else:
+            if key < root.elem:
+                return search(root.left, key)
+            else:
+                return search(root.right, key)
+    else:
+        return False
+    
 root = tree_construction([None, 71, 50, 90, 20, None, None, 98, None, 40, None, None, None, None, 94, None])
-postorder(root)
+print(search(root,98))
