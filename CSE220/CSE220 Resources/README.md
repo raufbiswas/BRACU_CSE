@@ -56,9 +56,7 @@ https://youtu.be/X7XmC2dxxJE
 
 # Website
 
-My friend Badhon Nandi create this amazing website which have all the resources to learn and recap our Data Structures course.
+My friend Badhon Nandi (LinkedIn profile - https://www.linkedin.com/in/badhon-nandi/) create this amazing website which have all the resources to learn and recap our Data Structures course.
 
 Data Structures:
-tinyurl.com/datastructuresroadmap
-
-His LinkedIn profile - https://www.linkedin.com/in/badhon-nandi/
+https://tinyurl.com/datastructuresroadmap
