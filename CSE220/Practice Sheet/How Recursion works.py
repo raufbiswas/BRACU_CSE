@@ -14,7 +14,7 @@ def recursiveMethod(parameter):
 print(">> Output of Example 01 <<")
 recursiveMethod(5)
 
-#Stack
+# Stack
 # push --> recursiveMethod(4) > recursiveMethod(3) > recursiveMethod(2) > recursiveMethod(1)
 # As 0 is less than 1 no need to store recursiveMethod(0) in stack. It will start executing the output.
 # It will be printed "Exit condition Satisfied. Exited."
