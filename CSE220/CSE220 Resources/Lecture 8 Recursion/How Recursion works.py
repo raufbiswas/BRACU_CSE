@@ -2,7 +2,7 @@
 # 1. A method call itself.
 # 2. Exit condition to exit from infinite loop.
 
-#Example 01
+# Example 01
 # Write a function which recursively print numbers from 1 to n.
 def recursiveMethod(parameter):
     if parameter < 1:
@@ -14,7 +14,7 @@ def recursiveMethod(parameter):
 print(">> Output of Example 01 <<")
 recursiveMethod(5)
 
-#Please visit this link (http://tinyurl.com/howRecursionworks)
+# Please visit this link (http://tinyurl.com/howRecursionworks)
 # Stack
 # push --> recursiveMethod(4) > recursiveMethod(3) > recursiveMethod(2) > recursiveMethod(1)
 # as 0 is less than 1 no need to store recursiveMethod(0) in stack.
