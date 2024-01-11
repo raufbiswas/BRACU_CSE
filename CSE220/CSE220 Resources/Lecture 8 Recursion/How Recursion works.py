@@ -14,15 +14,17 @@ def recursiveMethod(parameter):
 print(">> Output of Example 01 <<")
 recursiveMethod(5)
 
+#Please visit this link (http://tinyurl.com/howRecursionworks)
 # Stack
 # push --> recursiveMethod(4) > recursiveMethod(3) > recursiveMethod(2) > recursiveMethod(1)
-# As 0 is less than 1 no need to store recursiveMethod(0) in stack. It will start executing the output.
-# It will be printed "Exit condition Satisfied. Exited."
-# start poping
+# as 0 is less than 1 no need to store recursiveMethod(0) in stack.
+# start executing the output.
+# print "Exit condition Satisfied. Exited."
+# pop
 # recursiveMethod(4) > recursiveMethod(3) > recursiveMethod(2)
 # recursiveMethod(4) > recursiveMethod(3)
 # recursiveMethod(4)
-# All function poped out.
+# All function popped out.
 # Final output: Exit condition Satisfied. Exited. 1 2 3 4
 
 #Example 02
