@@ -12,7 +12,7 @@ def recursiveMethod(parameter):
         print(parameter)
 
 print(">> Output of Example 01 <<")
-recursiveMethod(5)
+recursiveMethod(4)
 
 # Please visit this link (http://tinyurl.com/howRecursionworks)
 # Stack
