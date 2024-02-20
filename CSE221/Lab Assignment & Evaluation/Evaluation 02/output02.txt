@@ -1,0 +1,11 @@
+Sample Output 01
+4
+
+Sample Output 01
+10
+
+Sample Output 01
+2
+
+Sample Output 01
+15
