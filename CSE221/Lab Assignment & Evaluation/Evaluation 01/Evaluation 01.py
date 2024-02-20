@@ -43,10 +43,10 @@ lst3 = list(map(int, inFile.readline().split()))
 
 result = sortfun(u,v,w,lst1,lst2,lst3)
 temp = [str(i) for i in result]
-outFile.write(f"{' '.join(temp)}")
+outFile.write(f"Sample Output 01\n{' '.join(temp)}")
 
 # 02
-outFile.write("\n")
+outFile.write("\n\n")
 u = int(inFile.readline())
 lst1 = list(map(int, inFile.readline().split()))
 v = int(inFile.readline())
@@ -56,7 +56,7 @@ lst3 = list(map(int, inFile.readline().split()))
 
 result = sortfun(u,v,w,lst1,lst2,lst3)
 temp = [str(i) for i in result]
-outFile.write(f"{' '.join(temp)}")
+outFile.write(f"Sample Output 02\n{' '.join(temp)}")
 
 inFile.close()
 outFile.close()
