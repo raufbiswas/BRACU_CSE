@@ -5,7 +5,7 @@ class LinkedList:
         self.elem = elem
         self.next = next
 
-def reverseLinkedList(head):
+def reverseLinkedList(head): #Outplace Reverse
     newHead = LinkedList(head.elem)
     temp = head.next
 
