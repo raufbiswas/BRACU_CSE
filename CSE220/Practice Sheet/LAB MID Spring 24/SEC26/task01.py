@@ -5,17 +5,16 @@ class LinkedList:
         self.elem = elem
         self.next = next
 
-def reverseLinkedList(head):
-    prev = None
-    current = head
+def reverseLinkedList(head): #Outplace Reverse
+    newHead = LinkedList(head.elem)
+    temp = head.next
 
-    while current is not None:
-        nextNode = current.next
-        current.next = prev
-        prev = current
-        current = nextNode
+    while temp is not None:
+        tempNode = LinkedList(temp.elem, newHead)
+        newHead = tempNode
+        temp = temp.next
 
-    return prev
+    return newHead
 
 def half_reversal_half_sum(head):
     temp, count = head, 0
