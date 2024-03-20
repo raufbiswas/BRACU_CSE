@@ -1,16 +1,6 @@
 inFile = open("input3.txt", "r")
 outFile = open("output3.txt", "w")
 
-"""
-Schedules tasks based on their start and end times, maximizing the number of non-overlapping tasks.
-
-Args:
-    n: The number of tasks.
-    task: A list of tasks, where each task is a tuple (start_time, end_time).
-
-Returns:
-    None. Writes the number of scheduled tasks and their details to `outFile`.
-"""
 def taskManagement(n, task):
     # Schedule tasks in ascending order of end time to avoid conflicts
     # Selection Sort. Time complexity O(N^2)
@@ -34,26 +24,14 @@ def taskManagement(n, task):
         outFile.write("\n")
         outFile.write(f"{t[0]} {t[1]}")
 
-# Testcase 01
-outFile.write("Sample Output 1\n")
-n, tasks = int(inFile.readline()), []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-taskManagement(n, tasks)
-
-# Testcase 02
-outFile.write("\n\nSample Output 2\n")
-n, tasks = int(inFile.readline()), []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-taskManagement(n, tasks)
-
-# Testcase 03
-outFile.write("\n\nSample Output 3\n")
-n, tasks = int(inFile.readline()), []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-taskManagement(n, tasks)
+#Test Cases
+for i in range(3):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n, tasks = int(inFile.readline()), []
+    for i in range(n):
+        tasks.append(list(map(int, inFile.readline().split())))
+    taskManagement(n, tasks)
 
 inFile.close()
 outFile.close()

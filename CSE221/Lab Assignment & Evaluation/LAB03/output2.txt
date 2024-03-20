@@ -1,11 +1,11 @@
-Sample Output 01
+Sample Output 1
 13
 
-Sample Output 02
+Sample Output 2
 15
 
-Sample Output 03
+Sample Output 3
 9
 
-Sample Output 04
+Sample Output 4
 10

@@ -15,28 +15,19 @@ def rankStudents(arrID, arrMarks): # selection sort technique
         arrID[i], arrID[maxIndex] = arrID[maxIndex], arrID[i] # swaping marks
         arrMarks[i], arrMarks[maxIndex] = arrMarks[maxIndex], arrMarks[i] # swapping ID's
 
-# Test Case 01
-n = int(inFile.readline())
-arrID = list(map(int, inFile.readline().split()))
-arrMarks = list(map(int, inFile.readline().split()))
-rankStudents(arrID, arrMarks)
-for i in range(n):
-    if i < n - 1:
-        outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}\n")
-    else:
-        outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}")
-
-# Test Case 02
-n = int(inFile.readline())
-arrID = list(map(int, inFile.readline().split()))
-arrMarks = list(map(int, inFile.readline().split()))
-rankStudents(arrID, arrMarks)
-outFile.write('\n\n')
-for i in range(n):
-    if i < n - 1:
-        outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}\n")
-    else:
-        outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}")
+#Test Cases
+for i in range(2):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    arrID = list(map(int, inFile.readline().split()))
+    arrMarks = list(map(int, inFile.readline().split()))
+    rankStudents(arrID, arrMarks)
+    for i in range(n):
+        if i < n - 1:
+            outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}\n")
+        else:
+            outFile.write(f"ID: {arrID[i]} Mark: {arrMarks[i]}")
 
 inFile.close()
 outFile.close()

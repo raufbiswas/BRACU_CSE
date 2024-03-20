@@ -18,17 +18,14 @@ def bubbleSort(arr):
         # break the loop so that it doesn't run n*n = n^2 times.
         # it will achieve θ(n) time complexity for the best-case scenario.
 
-#Test Case 01
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-bubbleSort(arr)
-outFile.write(' '.join(map(str, arr)))
-
-#Test Case 02
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-bubbleSort(arr)
-outFile.write(f"\n{' '.join(map(str, arr))}")
+#Test Cases
+for i in range(2):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    arr = list(map(int, inFile.readline().split()))
+    bubbleSort(arr)
+    outFile.write(' '.join(map(str, arr)))
 
 inFile.close()
 outFile.close()

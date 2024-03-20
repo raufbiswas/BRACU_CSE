@@ -2,15 +2,6 @@
 inFile = open("input2.txt", "r")
 outFile = open("output2(1).txt", "w")
 
-"""
-This function sorts the given list `arr` using the merge sort algorithm.
-
-Args:
-    arr: The list to be sorted.
-
-Returns:
-    None. Modifies the input list `arr` in-place to contain the sorted elements.
-"""
 def mergeList(arr):
     l = len(arr)
     if l > 1:
@@ -41,46 +32,18 @@ def mergeList(arr):
     # else:
           # Base case: If the list has only one element, it's already sorted. 
             
-# Testcase 01
-outFile.write("Sample Output 1\n")
-n = int(inFile.readline())
-l1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-l2 = list(map(int, inFile.readline().split()))
-sortedList = l1+l2
-mergeList(sortedList)
-finalList = [str(i) for i in sortedList]
-outFile.write(' '.join(finalList))
+#Test Cases
+for i in range(4):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    l1 = list(map(int, inFile.readline().split()))
+    m = int(inFile.readline())
+    l2 = list(map(int, inFile.readline().split()))
+    sortedList = l1+l2
+    mergeList(sortedList)
+    finalList = [str(i) for i in sortedList]
+    outFile.write(' '.join(finalList))
 
-# Testcase 02
-outFile.write("\n\nSample Output 2\n")
-n = int(inFile.readline())
-l1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-l2 = list(map(int, inFile.readline().split()))
-sortedList = l1+l2
-mergeList(sortedList)
-finalList = [str(i) for i in sortedList]
-outFile.write(' '.join(finalList))
-
-# Testcase 03
-outFile.write("\n\nSample Output 3\n")
-n = int(inFile.readline())
-l1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-l2 = list(map(int, inFile.readline().split()))
-sortedList = l1+l2
-mergeList(sortedList)
-finalList = [str(i) for i in sortedList]
-outFile.write(' '.join(finalList))
-
-# Testcase 04
-outFile.write("\n\nSample Output 4\n")
-n = int(inFile.readline())
-l1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-l2 = list(map(int, inFile.readline().split()))
-sortedList = l1+l2
-mergeList(sortedList)
-finalList = [str(i) for i in sortedList]
-outFile.write(' '.join(finalList))
+inFile.close()
+outFile.close()

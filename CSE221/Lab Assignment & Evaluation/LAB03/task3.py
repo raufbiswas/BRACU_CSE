@@ -33,26 +33,14 @@ def sortAndCount(arr, left, right):
 
     return count
 
-#TestCase 01
-outFile.write("Sample Output 01\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-result = dividingArr(arr)
-outFile.write(str(result))
-
-#TestCase 02
-outFile.write("\n\nSample Output 02\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-result = dividingArr(arr)
-outFile.write(str(result))
-
-#TestCase 03
-outFile.write("\n\nSample Output 03\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-result = dividingArr(arr)
-outFile.write(str(result))
+#Test Cases
+for i in range(3):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    arr = list(map(int, inFile.readline().split()))
+    result = dividingArr(arr)
+    outFile.write(str(result))
 
 inFile.close()
 outFile.close()

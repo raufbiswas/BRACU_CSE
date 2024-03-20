@@ -26,37 +26,15 @@ def mergeSort(arr):
         arr[x] = right[j]
         j, x = j + 1, x + 1
 
-#TestCase 01
-outFile.write("Sample Output 01\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-mergeSort(arr)
-arr = [str(i) for i in arr]
-outFile.write(f"{' '.join(arr)}")
-
-#TestCase 02
-outFile.write("\n\nSample Output 02\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-mergeSort(arr)
-arr = [str(i) for i in arr]
-outFile.write(f"{' '.join(arr)}")
-
-#TestCase 03
-outFile.write("\n\nSample Output 03\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-mergeSort(arr)
-arr = [str(i) for i in arr]
-outFile.write(f"{' '.join(arr)}")
-
-#TestCase 04
-outFile.write("\n\nSample Output 04\n")
-n = int(inFile.readline())
-arr = list(map(int, inFile.readline().split()))
-mergeSort(arr)
-arr = [str(i) for i in arr]
-outFile.write(f"{' '.join(arr)}")
+#Test Cases
+for i in range(4):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    arr = list(map(int, inFile.readline().split()))
+    mergeSort(arr)
+    arr = [str(i) for i in arr]
+    outFile.write(f"{' '.join(arr)}")
 
 inFile.close()
 outFile.close()

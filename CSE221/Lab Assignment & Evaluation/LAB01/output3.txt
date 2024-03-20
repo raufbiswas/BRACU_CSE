@@ -1,3 +1,4 @@
+Sample Output 1
 ID: 4 Mark: 50
 ID: 9 Mark: 50
 ID: 7 Mark: 40
@@ -6,6 +7,7 @@ ID: 1 Mark: 10
 ID: 2 Mark: 10
 ID: 5 Mark: 10
 
+Sample Output 2
 ID: 5 Mark: 80
 ID: 7 Mark: 80
 ID: 2 Mark: 60

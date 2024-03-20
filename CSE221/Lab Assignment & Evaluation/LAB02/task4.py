@@ -1,16 +1,6 @@
 inFile = open("input4.txt", "r")
 outFile = open("output4.txt", "w")
 
-"""
-Calculates the maximum number of tasks that can be completed by `peps` people given a list of `tasks`.
-
-Args:
-    tasks: A list of tasks, where each task is a list (start_time, end_time).
-    peps: The number of people available to complete tasks.
-
-Returns:
-    The maximum number of tasks that can be completed.
-"""
 def maxCompletedTasks(task, peps):
     # Schedule tasks in ascending order of end time to avoid conflicts
     # Selection Sort. Time complexity O(N^2)
@@ -45,45 +35,15 @@ def maxCompletedTasks(task, peps):
             count += 1
     outFile.write(str(count))
 
-# Testcase 01
-outFile.write("Sample Output 1\n")
-n, m = map(int, inFile.readline().split())
-tasks = []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-maxCompletedTasks(tasks, m)
-
-# Testcase 02
-outFile.write("\n\nSample Output 2\n")
-n, m = map(int, inFile.readline().split())
-tasks = []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-maxCompletedTasks(tasks, m)
-
-# Testcase 03
-outFile.write("\n\nSample Output 3\n")
-n, m = map(int, inFile.readline().split())
-tasks = []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-maxCompletedTasks(tasks, m)
-
-# Testcase 04
-outFile.write("\n\nSample Output 4\n")
-n, m = map(int, inFile.readline().split())
-tasks = []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-maxCompletedTasks(tasks, m)
-
-# Testcase 05
-outFile.write("\n\nSample Output 5\n")
-n, m = map(int, inFile.readline().split())
-tasks = []
-for i in range(n):
-    tasks.append(list(map(int, inFile.readline().split())))
-maxCompletedTasks(tasks, m)
+#Test Cases
+for i in range(5):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n, m = map(int, inFile.readline().split())
+    tasks = []
+    for i in range(n):
+        tasks.append(list(map(int, inFile.readline().split())))
+    maxCompletedTasks(tasks, m)
 
 inFile.close()
 outFile.close()
