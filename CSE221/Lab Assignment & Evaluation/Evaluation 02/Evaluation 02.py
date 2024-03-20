@@ -23,48 +23,18 @@ def mergeList(arr):
         while j < len(right):
             arr[x] = right[j]
             j, x = j + 1, x + 1
-# Testcase 01
-n = int(inFile.readline())
-list1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-list2 = list(map(int, inFile.readline().split()))
-k = int(inFile.readline())
-arr = list1+list2
-mergeList(arr)
-outFile.write(f"Sample Output 01\n{str(arr[k-1])}")
 
-# Testcase 02
-outFile.write("\n\n")
-n = int(inFile.readline())
-list1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-list2 = list(map(int, inFile.readline().split()))
-k = int(inFile.readline())
-arr = list1+list2
-mergeList(arr)
-outFile.write(f"Sample Output 01\n{str(arr[k-1])}")
-
-# Testcase 03
-outFile.write("\n\n")
-n = int(inFile.readline())
-list1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-list2 = list(map(int, inFile.readline().split()))
-k = int(inFile.readline())
-arr = list1+list2
-mergeList(arr)
-outFile.write(f"Sample Output 01\n{str(arr[k-1])}")
-
-# Testcase 04
-outFile.write("\n\n")
-n = int(inFile.readline())
-list1 = list(map(int, inFile.readline().split()))
-m = int(inFile.readline())
-list2 = list(map(int, inFile.readline().split()))
-k = int(inFile.readline())
-arr = list1+list2
-mergeList(arr)
-outFile.write(f"Sample Output 01\n{str(arr[k-1])}")
+for i in range(4):
+    if i == 0: outFile.write(f"Sample Output 1\n")
+    else: outFile.write(f"\n\nSample Output {i+1}\n")
+    n = int(inFile.readline())
+    list1 = list(map(int, inFile.readline().split()))
+    m = int(inFile.readline())
+    list2 = list(map(int, inFile.readline().split()))
+    k = int(inFile.readline())
+    arr = list1+list2
+    mergeList(arr)
+    outFile.write(str(arr[k-1]))
 
 inFile.close()
 outFile.close()
