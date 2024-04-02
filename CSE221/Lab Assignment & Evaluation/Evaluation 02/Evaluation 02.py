@@ -1,5 +1,5 @@
-inFile = open("input02.txt", "r")
-outFile = open("output02.txt", "w")
+inFile = open("input.txt", "r")
+outFile = open("output.txt", "w")
 def mergeList(arr):
     l = len(arr)
     if l > 1:

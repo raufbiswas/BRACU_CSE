@@ -1,5 +1,5 @@
-inFile = open("input1.txt", "r")
-outFile = open("output1.txt", "w")
+inFile = open("input.txt", "r")
+outFile = open("output.txt", "w")
 
 def sortfun(u,v,w,lst1,lst2,lst3):
     i, j, temp = 0, 0, []
