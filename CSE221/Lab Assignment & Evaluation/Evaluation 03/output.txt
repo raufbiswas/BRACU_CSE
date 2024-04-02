@@ -1,0 +1,6 @@
+Sample Output
+Node 1 No
+Node 2 Yes
+Node 3 Yes
+Node 4 Yes
+Node 5 No
