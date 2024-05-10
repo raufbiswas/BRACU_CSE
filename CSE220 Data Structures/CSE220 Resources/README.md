@@ -30,6 +30,9 @@ CSE220 RAK - https://youtube.com/playlist?list=PLp7yhNWDuCSDm0OvjF_jpTzAuI-dPPc6
 CSE220 AHR -
 https://youtube.com/playlist?list=PLCh3_NUqW7_KVbFD7136as7rXInRVxDn4&si=pQF2bEEgzkzJXpWj
 
+CSE220 PNP -
+https://youtube.com/playlist?list=PLgoku7dHsmSylpAFgIllmo8-0n0-22i-P&si=EOZGJjaJrXR4SPk9
+
 Recursion - https://youtube.com/playlist?list=PLkqsZdV3LRJT8d6nlM9-dI5JJwqcWWUnD&si=OZO5fuQhK-hJTLc5
 
 Trees - https://youtube.com/playlist?list=PLkqsZdV3LRJTN_X766jVyMo4VepCzJZjH&si=vswkw8eqO-rn7zaJ
