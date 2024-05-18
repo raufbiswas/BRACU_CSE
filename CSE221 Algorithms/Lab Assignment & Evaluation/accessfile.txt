@@ -1,4 +1,4 @@
-At first create a txt file and the copy it's directory. If you keep your code and txt in the same folder then you can use file name instead of folder directory.
+At first create a txt file and then copy it's directory. If you keep your code and txt file in the same folder then you can use file name instead of folder directory.
 
 To access,
 file1 = open("directory/file_name", "access_mode")
