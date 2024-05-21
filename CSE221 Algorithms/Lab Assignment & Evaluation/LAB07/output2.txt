@@ -1,5 +1,0 @@
-Sample Output 1
-28
-
-Sample Output 2
-17
