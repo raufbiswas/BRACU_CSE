@@ -1,5 +1,0 @@
-Sample Output 01
-9
-7
-6
-10
