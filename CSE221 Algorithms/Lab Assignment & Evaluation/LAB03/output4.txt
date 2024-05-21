@@ -1,0 +1,8 @@
+Sample Output 1
+73
+
+Sample Output 2
+110
+
+Sample Output 3
+63
