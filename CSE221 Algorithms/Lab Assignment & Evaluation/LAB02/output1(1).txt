@@ -1,0 +1,11 @@
+Sample Output 1
+2 4
+
+Sample Output 2
+3 6
+
+Sample Output 3
+IMPOSSIBLE
+
+Sample Output 4
+IMPOSSIBLE

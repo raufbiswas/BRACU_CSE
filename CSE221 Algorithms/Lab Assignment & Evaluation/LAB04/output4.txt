@@ -1,0 +1,14 @@
+Sample Output 1
+NO
+
+Sample Output 2
+YES
+
+Sample Output 3
+NO
+
+Sample Output 4
+NO
+
+Sample Output 5
+YES
